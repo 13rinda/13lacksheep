@@ -15,17 +15,18 @@ if (!empty($_POST['name']) && !empty($_POST['mailto']) && !empty($_POST['subject
       $mail    		= new PHPMailer;
       $mail->isSMTP();     
 		
-		// Set mailer to use SMTP
-      $mail->Host       = 'smtp.gmail.com'; // Specify main and backup SMTP servers
+    // Set mailer to use SMTP
+      // $mail->SMTPDebug = 2;
+      $mail->Host       = 'srv58.niagahoster.com'; // Specify main and backup SMTP servers
       $mail->SMTPAuth   = true; // Enable SMTP authentication
-      $mail->Username   = 'rovertest13@gmail.com'; // SMTP username
-      $mail->Password   = 'RoverF@iry13'; // SMTP password
+      $mail->Username   = 'demo@mastavt.com'; // SMTP username
+      $mail->Password   = 'G7&&,RsJoRsa'; // SMTP password
       $mail->SMTPSecure = 'ssl'; // Enable TLS encryption, `ssl` also accepted
       $mail->Port       = 465;    
 
       //Recipients
-      $mail->setFrom('sentfromemail', 'Eamil Heading');
-		$mail->addAddress($mailto);     // Add a recipient
+      $mail->setFrom('demo@mastavt.com', 'Admin');
+		  $mail->addAddress($mailto);     // Add a recipient
 		
 		$messages = "";
 		if($subject != 'Reservation Request'){
@@ -39,12 +40,12 @@ if (!empty($_POST['name']) && !empty($_POST['mailto']) && !empty($_POST['subject
 		$mail->Body    = $messages;
 		
       if($mail->send()){
-			$emailType = ($subject == 'Reservation Request') ? "Reservation" : "Email";
+			  $emailType = ($subject == 'Reservation Request') ? "Reservation" : "Email";
          $result['message'] = $emailType." Send Successfully";
          $result['code']=1;
       }
       else{
-         $result['message'] = "Message could not be sent. Mailer Error";
+         $result['message'] = "Message could not be sent. Mailer Error : ".$mail->ErrorInfo;
          $result['code']=0;
       }
    }
