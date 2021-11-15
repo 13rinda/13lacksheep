@@ -30,7 +30,7 @@
 			<div class="container">
 				<div class="row justify-content-between">
 						<div class="col d-flex align-items-center">
-							<p class="mb-0 phone"><span class="mailus">Phone no:</span> <a href="#">+00 1234 567</a> or <span class="mailus">email us:</span> <a href="#">blacksheepeventhouse@gmail.com</a></p>
+							<p class="mb-0 phone"><span class="mailus"></span> <a href="#"></a><span class="mailus">email us:</span> <a href="#">blacksheepeventhouse@gmail.com</a></p>
 						</div>
 						<div class="col d-flex justify-content-end">
 							<div class="social-media">
@@ -98,11 +98,12 @@
 									<div class="contact-wrap w-100 p-md-5 p-4">
 										<h3 class="mb-4">Get in touch</h3>
 										<div id="form-message-warning" class="mb-4"></div> 
-					      		<div id="form-message-success" class="mb-4">
+					      		<!-- <div id="form-message-success" class="mb-4">
 					            Your message was sent, thank you!
-					      		</div>
-										<!-- <form method="POST" id="contactForm" name="contactForm" class="contactForm"> -->
-											<input type="hidden" class="form-control" id="mailto" value="blacksheepeventhouse@gmail.com">
+									</div> -->
+										<form method="POST" id="contactForm" name="contactForm" class="contactForm" action="https://script.google.com/macros/s/AKfycbwCfWQnJlpo75zhowkGh7-mrTh_SN-Z_29sjT-tF6iKyA1xjBmzVj_98Y7D8MR8SGHQ/exec">
+											<!-- <input type="hidden" class="form-control" id="mailto" value="blacksheepeventhouse@gmail.com"> -->
+											<input type="hidden" class="form-control" name="emailtype" id="emailtype" value="contact">
 											<div class="row">
 												<div class="col-md-6">
 													<div class="form-group">
@@ -130,12 +131,12 @@
 												</div>
 												<div class="col-md-12">
 													<div class="form-group">
-														<input type="button" value="Send Message" class="btn btn-primary" id="sendemail">
+														<input type="submit" value="Send Message" class="btn btn-primary" id="btnSendMail">
 														<div class="submitting"></div>
 													</div>
 												</div>
 											</div>
-										<!-- </form> -->
+										</form>
 									</div>
 								</div>
 								<div class="col-lg-4 col-md-5 d-flex align-items-stretch">

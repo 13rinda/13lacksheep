@@ -242,113 +242,60 @@
 		});
 	}
 	//onclick event to submit a form
-	$('#sendemail').on("click", function(){
+	$('#contactForm').submit(function() {
 		var validateform = ValidateEmailForm('contact');
 		if(validateform === true){
-			var mailfrom 	= $('#mailfrom').val();
-			var name 		= $('#name').val();
-			var mailto 		= $('#mailto').val();
-			var subject 	= $('#subject').val();
-			var detailMsg 	= $('#message').val();
+			$('#btnSendMail').attr('disabled', 'disabled');
 			$.ajax({  
-				url		: "script/send-mail.php",  
-				method	: "post",
-				dataType : "json",
-				data		: {
-					name 			: name, 
-					mailfrom 	: mailfrom, 
-					mailto 		: mailto, 
-					subject		: subject, 
-					message 		: detailMsg
-				},
-				// beforeSend: function(){
-				// 	// Show image container
-				// 	$("#loading").show();
-				// },
-				success:function(result){
-					console.log(result);
-					if(result.code==1){
-						iziToast.success({
-							title		: 'Succes !',
-							message	: result.message,
-							position	: 'topRight'
-						});
+				url			: $(this).attr('action'),
+				data	   	: $(this).serialize(),
+				method		: "post",
+				dataType 	: "json",
+				success:function(info){
+					console.log(info);
+					if(info.result == 'success'){
+						notifySuccess('Contact Send Successfully !');
 						window.setTimeout(function(){
-							// window.location.href = "contact.html";
 							location.reload(true);
 						}, 3000);
 					}
 					else{
-						iziToast.error({
-							title		: 'Sorry!',
-							message	: result.message,
-							position	: 'topRight'
-						});
+						notifyError('Message could not be sent !');
+						console.log('Error :', info.error);
+						$('#btnSendMail').removeAttr('disabled');
 					}
-				},
-				complete:function(html){
-					// Hide image container
-					// $("#loading").hide();
 				}
 			});
 		}
 		return false;
 	});
 
-	$('#booking-now').on("click", function(){
+	$('#appointment-form').submit(function() {
 		var validateform = ValidateEmailForm('reservation');
 		if(validateform === true){
-			var fullname 	= $('#fullname').val();
-			var checkin 	= $('#checkin').val();
-			var checkout 	= $('#checkout').val();
-			var adults 		= $('#adults').val();
-			var children 	= $('#children').val();
-			var phone 		= $('#phone').val();
-			var time 		= $('#time').val();
-			var mailto 		= $('#mailto').val();
-			
-			var detailMsg 	= "Reservation Info : <br>";
-			detailMsg += "Customer name : " + fullname + '<br>';
-			detailMsg += "Check In Date : " + checkin + '<br>';
-			detailMsg += "Check Out Date : " + checkout + '<br>';
-			detailMsg += "Adults : " + adults + '<br>';
-			detailMsg += "Children : " + children + '<br>';
-			detailMsg += "Phone Number : " + phone + '<br>';
-			detailMsg += "Time : " + time; 
-			
+			$('#booking-now').attr('disabled', 'disabled');
 			$.ajax({  
-				url		: "script/send-mail.php",  
-				method	: "post",
-				dataType : "json",
-				data		: {
-					name 			: fullname, 
-					mailto 		: mailto, 
-					subject		: 'Reservation Request', 
-					message 		: detailMsg
-				},
-				// beforeSend: function(){
-				// 	// Show image container
-				// 	$("#loading").show();
-				// },
-				success:function(result){
-					console.log(result);
-					if(result.code==1){
-						notifySuccess(result.message);
+				url			: $(this).attr('action'),
+				data	   	: $(this).serialize(),
+				method		: "post",
+				dataType 	: "json",
+				success		: function(info){
+					console.log(info);
+					if(info.result == 'success'){
+						notifySuccess('Reservation request send successfully !');
 						window.setTimeout(function(){
-							// window.location.href = "contact.html";
 							location.reload(true);
 						}, 3000);
 					}
 					else{
-						notifyError(result.message);
+						notifyError('Reservation request could not be sent !');
+						console.log('Error :', info.error);
+						$('#booking-now').removeAttr('disabled');
 					}
-				},
-				complete:function(html){
-					// Hide image container
-					// $("#loading").hide();
 				}
 			});
 		}
+		return false;
 	});
 
 })(jQuery);
