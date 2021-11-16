@@ -9445,8 +9445,47 @@
 	  stroke-dashoffset: -136px; } }
  
 @media (max-width: 1199.98px) {
+	.hero-wrap {
+		background-position: center center !important; 
+		background-size: 80vh; 
+	} 
+
+	.header-bgimage-mobile{
+		max-height: 57vh;
+	}
 	.on-top-mobile{
 		text-align: center;
-		top: -40%;
+		top: 3vh;
+	}
+}
+
+@media (max-width: 768px) {
+	.hero-wrap {
+		background-position: center center !important; 
+		background-size: 80vh; 
+	} 
+
+	.header-bgimage-mobile{
+		max-height: 57vh;
+	}
+	.on-top-mobile{
+		text-align: center;
+		top: 3vh;
+	}
+}
+
+@media (max-height:  468px) {
+	.hero-wrap {
+		background-position: center center !important; 
+		background-size: 55%; 
+	} 
+
+	.header-bgimage-mobile{
+		max-height: 65vh;
+	}
+	.on-top-mobile{
+		text-align: center;
+		top: 19vh;
+		z-index: 99;
 	}
 }
