@@ -1,8 +1,5 @@
 (function($) {
-
 	"use strict";
-
-
 	$(window).stellar({
 		responsive: true,
 		parallaxBackgrounds: true,
@@ -11,18 +8,13 @@
 		hideDistantElements: false,
 		scrollProperty: 'scroll'
   	});
-
-
 	var fullHeight = function() {
-
 		$('.js-fullheight').css('height', $(window).height());
 		$(window).resize(function(){
 			$('.js-fullheight').css('height', $(window).height());
 		});
-
 	};
 	fullHeight();
-
 	// loader
 	var loader = function() {
 		setTimeout(function() { 
@@ -32,7 +24,6 @@
 		}, 1);
 	};
 	loader();
-
   var carousel = function() {
 		$('.carousel-testimony').owlCarousel({
 			center: true,
@@ -54,10 +45,8 @@
 				}
 			}
 		});
-
 	};
 	carousel();
-
 	$('nav .dropdown').hover(function(){
 		var $this = $(this);
 		// 	 timer;
@@ -76,12 +65,9 @@
 			$this.find('.dropdown-menu').removeClass('show');
 		// }, 100);
 	});
-
-
 	$('#dropdown04').on('show.bs.dropdown', function () {
 	  console.log('show');
 	});
-
 	// magnific popup
 	$('.image-popup').magnificPopup({
 		type: 'image',
@@ -102,28 +88,21 @@
 		duration: 300 // don't foget to change the duration also in CSS
 		}
 	});
-
 	$('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
 		disableOn: 700,
 		type: 'iframe',
 		mainClass: 'mfp-fade',
 		removalDelay: 160,
 		preloader: false,
-
 		fixedContentPos: false
 	});
-
 	var contentWayPoint = function() {
 		var i = 0;
 		$('.ftco-animate').waypoint( function( direction ) {
-
 			if( direction === 'down' && !$(this.element).hasClass('ftco-animated') ) {
-				
 				i++;
-
 				$(this.element).addClass('item-animate');
 				setTimeout(function(){
-
 					$('body .ftco-animate.item-animate').each(function(k){
 						var el = $(this);
 						setTimeout( function () {
@@ -140,15 +119,11 @@
 							el.removeClass('item-animate');
 						},  k * 50, 'easeInOutExpo' );
 					});
-					
 				}, 100);
-				
 			}
-
 		} , { offset: '95%' } );
 	};
 	contentWayPoint();
-
 	$('.appointment_date-check-in').datepicker({
 	  'format': 'm/d/yyyy',
 	  'autoclose': true
@@ -157,9 +132,7 @@
 	  'format': 'm/d/yyyy',
 	  'autoclose': true
 	});
-
 	$('.appointment_time').timepicker();
-
 	//validating user input
 	function ValidateEmailForm(type){
 		switch(type){
@@ -222,10 +195,8 @@
 				}
 			break;
 		}
-		
 		return true;
 	}
-
 	function notifySuccess(message, title = 'Success !', postion = 'topRight') {
 		iziToast.success({
 			title		: title,
@@ -233,7 +204,6 @@
 			position	: postion
 		});
 	}
-
 	function notifyError(message, title = 'Failed !', postion = 'topRight') {
 		iziToast.error({
 			title		: title,
@@ -269,7 +239,6 @@
 		}
 		return false;
 	});
-
 	$('#appointment-form').submit(function() {
 		var validateform = ValidateEmailForm('reservation');
 		if(validateform === true){
@@ -298,5 +267,20 @@
 		return false;
 	});
 
+	var folder = "images/services/";
+	$.ajax({
+		url : folder,
+		success: function (data) {
+			var x=0;
+			var isActive = "";
+			$(data).find("a").attr("href", function (i, val) {
+				if( val.match(/\.(jpe?g|png|gif)$/) ) { 
+					x++;
+					console.log(i, val);
+					isActive = (x==1) ? "active" : "";
+					$(".carousel-inner").append('<div class="carousel-item '+ isActive +'"><img class="d-block w-100" src="'+ folder + val +'" alt="'+ val +'"></div>');
+				} 
+			});
+		}
+  });
 })(jQuery);
-
