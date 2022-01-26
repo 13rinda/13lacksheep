@@ -23,6 +23,14 @@
 
     <link rel="stylesheet" href="css/flaticon.css">
 	 <link rel="stylesheet" href="css/style.css">
+	 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	     <style type="text/css">
+  
+</style>
 	 
   </head>
   <body>
@@ -41,6 +49,39 @@
 				    			<a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-dribbble"><i class="sr-only">Dribbble</i></span></a>
 				    		</p>
 			        </div>
+			          <a href="#googtrans(en|en)" class="lang-en lang-select" data-lang="en" style="color:white;"><img src="images/u.png" height="20px" width="20px"> English </a>&nbsp; &nbsp;
+      
+      <a href="#googtrans(en|fr)" class="lang-es lang-select" data-lang="fr" style="color:white;"><img src="images/f.png" height="20px" width="20px"> French</a>
+
+            <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.FloatPosition.TOP_LEFT}, 'google_translate_element');
+    }
+
+  function triggerHtmlEvent(element, eventName) {
+    var event;
+    if (document.createEvent) {
+    event = document.createEvent('HTMLEvents');
+    event.initEvent(eventName, true, true);
+    element.dispatchEvent(event);
+    } else {
+    event = document.createEventObject();
+    event.eventType = eventName;
+    element.fireEvent('on' + event.eventType, event);
+    }
+  }
+
+  jQuery('.lang-select').click(function() {
+    var theLang = jQuery(this).attr('data-lang');
+    jQuery('.goog-te-combo').val(theLang);
+
+    //alert(jQuery(this).attr('href'));
+    window.location = jQuery(this).attr('href');
+    location.reload();
+
+  });
+</script>
+<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 						</div>
 				</div>
 			</div>
@@ -58,6 +99,7 @@
 	        	<li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
 	        	<li class="nav-item"><a href="rooms.html" class="nav-link">Apartment Room</a></li>
 	          <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+	          <li class="nav-item"><a href="gift_shop.html" class="nav-link">Gift Shop</a></li>
 	          <li class="nav-item active"><a href="contact.html" class="nav-link">Contact</a></li>
 	        </ul>
 	      </div>
@@ -65,7 +107,8 @@
 	  </nav>
     <!-- END nav -->
 
-    <section class="hero-wrap hero-wrap-2" style="background-image: url('images/contact_us.jpg');" data-stellar-background-ratio="0.5">
+    <section class="hero-wrap hero-wrap-2" >
+    	<img src="images/contact_us.jpg" height="400px" width="100%">
       <div class="overlay"></div>
       <div class="container">
         <div class="row no-gutters slider-text align-items-center justify-content-center">
@@ -230,6 +273,7 @@
             </ul>
 					</div>
 				</div>
+		<div id="google_translate_element"></div>
 			</div>
 			<div class="w-100 mt-5 border-top py-5">
 				<div class="container">
