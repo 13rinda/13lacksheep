@@ -29,8 +29,67 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
   <style type="text/css">
 
-
-
+.ftco-book1 .appointment-form {
+  padding: 20px;
+  width: 100%;
+  background: #fff;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 15px 34px -29px rgba(0, 0, 0, 0.54);
+  -moz-box-shadow: 0px 15px 34px -29px rgba(0, 0, 0, 0.54);
+  box-shadow: 0px 15px 34px -29px rgba(0, 0, 0, 0.54); }
+@media (min-width: 992px) {
+    .ftco-book1 .appointment-form {
+     margin-top: -650px; } }
+  .ftco-book1 .appointment-form .form-group {
+    position: relative;
+    width: 100%;
+    display: block; }
+    .ftco-book1 .appointment-form .form-group .icon {
+     position: absolute;
+     top: 50% !important;
+     right: 10px;
+     font-size: 16px;
+     -webkit-transform: translateY(-50%);
+     -ms-transform: translateY(-50%);
+     transform: translateY(-50%); }
+     .ftco-book1 .appointment-form .form-group .icon span {
+      font-size: 10px;
+      color: rgba(0, 0, 0, 0.8) !important; }
+    .ftco-book1 .appointment-form .form-group .select-wrap, .ftco-book .appointment-form .form-group .input-wrap {
+     position: relative; }
+     .ftco-book1 .appointment-form .form-group .select-wrap select, .ftco-book .appointment-form .form-group .input-wrap select {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none; }
+    .ftco-book1 .appointment-form .form-group .btn {
+     width: 100%;
+     display: block !important; }
+  .ftco-book1 .appointment-form .form-control {
+    border: transparent !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2) !important;
+    height: 50px !important;
+    background: rgba(0, 0, 0, 0.05) !important;
+    color: rgba(0, 0, 0, 0.9) !important;
+    font-size: 14px;
+    border-radius: 4px;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important; }
+    .ftco-book1 .appointment-form .form-control::-webkit-input-placeholder {
+     /* Chrome/Opera/Safari */
+     color: rgba(0, 0, 0, 0.9); }
+    .ftco-book1 .appointment-form .form-control::-moz-placeholder {
+     /* Firefox 19+ */
+     color: rgba(0, 0, 0, 0.9); }
+    .ftco-book1 .appointment-form .form-control:-ms-input-placeholder {
+     /* IE 10+ */
+     color: rgba(0, 0, 0, 0.9); }
+    .ftco-book1 .appointment-form .form-control:-moz-placeholder {
+     /* Firefox 18- */
+     color: rgba(0, 0, 0, 0.9); }
+    .ftco-book1 .appointment-form .form-control:focus, .ftco-book .appointment-form .form-control:active {
+     border-color: #fff; }
+  .ftco-book1 .appointment-form textarea.form-control {
+    height: inherit !important; }
 .parallax {
   background-image: url(images/bg_1.jpg);
 
@@ -245,7 +304,7 @@
           
           </center>
         
-         <div class="ftco-section ftco-book col-md-8" id="content-mobile">
+         <div class="ftco-section ftco-book1 col-md-8" id="content-mobile">
           <center>
             <form method="POST" id="appointment-form" name="appointment-form" class="appointment-form " action="https://script.google.com/macros/s/AKfycbxhQoLZxC8rNxN6BXoKqT8bjumniftaQ7JVomMLe89TpIzYR2rpOnwYEXBzqcM4SLMYAw/exec" >
               <!-- <input type="hidden" class="form-control" id="mailto" value="blacksheepeventhouse@gmail.com"> -->
@@ -324,11 +383,6 @@
                 <div class="col-md-6">
                   <div class="form-group">
                     <input type="text" class="form-control" placeholder="Phone number" id="phone" name="phone">
-                  </div>
-                </div>
-                 <div class="col-md-6">
-                  <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Coupon Code" id="coupon" name="coupon">
                   </div>
                 </div>
                 <div class="col-md-6">
