@@ -151,7 +151,7 @@
               <!-- <input type="hidden" class="form-control" id="mailto" value="blacksheepeventhouse@gmail.com"> -->
               <input type="hidden" class="form-control" name="emailtype" id="emailtype" value="reservation">
               <center><a href="https://www.airbnb.ca/rooms/49062148?preview_for_ml=true&source_impression_id=p3_1636679453_osGa%2FA7KVRlyVWBa&guests=1&adults=1" class="btn btn-primary">Book on AirBnb</a> 
-              <a href="https://13lacksheep.com/rooms.html" class="btn btn-primary">Book with Discounts</a> </center>
+              <a href="https://13lacksheep.com/rooms.html" class="btn btn-primary">Direct Booking Prices</a> </center>
               <br><br>
               <h3 class="mb-3">Send Reservation Request</h3>
               <div class="row">
@@ -238,8 +238,8 @@
           </center>
           <br>
           <div id="content-mobile">
-        <center><a href="https://www.airbnb.ca/rooms/49062148?preview_for_ml=true&source_impression_id=p3_1636679453_osGa%2FA7KVRlyVWBa&guests=1&adults=1" class="btn btn-primary">Book on AirBnb</a> 
-              <a href="https://13lacksheep.com/rooms.html" class="btn btn-primary">Book with Discounts</a> </center> </div>
+        <center><a href="https://www.airbnb.com/h/event-house" class="btn btn-primary">Book on AirBnb</a> 
+              <a href="https://13lacksheep.com/rooms.html" class="btn btn-primary">Direct Booking Prices</a> </center> </div>
          <div class="ftco-section ftco-book col-md-8" id="content-mobile" style="bottom: 2%; border-radius: 10%;">
           <center>
             <form method="POST" id="appointment-form" name="appointment-form" class="appointment-form " action="https://script.google.com/macros/s/AKfycbxhQoLZxC8rNxN6BXoKqT8bjumniftaQ7JVomMLe89TpIzYR2rpOnwYEXBzqcM4SLMYAw/exec" >
@@ -279,7 +279,7 @@
                       <div class="select-wrap">
                         <div class="icon"><span class="fa fa-chevron-down"></span></div>
                         <select name="adults" id="adults" class="form-control">
-                          <option value="">Adults</option>
+                          <option value="">Guests</option>
                           <option value="1">1</option>
                           <option value="2">2</option>
                           <option value="5"><5</option>
@@ -287,7 +287,7 @@
                           <option value="20"><20</option>
                           <option value="30"><30</option>
                           <option value="40"><40</option>
-                          <option value="50"><50</option>
+                          <option value="50"><=50</option>
                         </select>
                       </div>
                     </div>
@@ -298,17 +298,9 @@
                     <div class="form-field">
                       <div class="select-wrap">
                         <div class="icon"><span class="fa fa-chevron-down"></span></div>
-                        <select name="children" id="children" class="form-control">
-                          <option value="">Children</option>
-                          <option value="1">0</option>
-                          <option value="2"><2</option>
-                          <option value="5"><5</option>
-                          <option value="10"><10</option>
-                          <option value="20"><20</option>
-                          <option value="30"><30</option>
-                          <option value="40"><40</option>
-                          <option value="50"><50</option>
-                        </select>
+                        <div class="icon"><span class="ion-ios-clock"></span></div>
+                         <input type="text" class="form-control appointment_time" placeholder="Check-in Time" id="time" name="time">
+                        </input>
                       </div>
                     </div>
                   </div>
@@ -320,14 +312,9 @@
                 </div>
                 <div class="col-md-6">
                   <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Discount Code" id="phone" name="phone">
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <div class="input-wrap">
+                    <div class="select-wrap">
                       <div class="icon"><span class="ion-ios-clock"></span></div>
-                      <input type="text" class="form-control appointment_time" placeholder="Time" id="time" name="time">
+                       <input type="text" name="promo code" placeholder="Promo Code" id="promo code" class="form-control">
                     </div>
                   </div>
                 </div>
@@ -338,6 +325,7 @@
                 </div>
               </div>
             </form>
+          </div>
 </div>
           
           </center>
