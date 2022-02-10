@@ -120,7 +120,7 @@
             <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
             <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
             <li class="nav-item"><a href="rooms.html" class="nav-link">Special Pricing</a></li>
-            <li class="nav-item"><a href="rooms.html" class="nav-link">Gift Shop</a></li>
+            <li class="nav-item"><a href="gift_shop.html" class="nav-link">Gift Shop</a></li>
             <li class="nav-item"><a href="blog.html" class="nav-link">Publications</a></li>
             <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
           </ul>
@@ -143,7 +143,10 @@
           <div class="col-md-6 wrap-about">
             <h2>Come check out this Black Sheep!</h2>
             <p>Not only does this black house stand out on its block, but it stands out, period. Pictures speaks louder than words, and this place is no catfish. It. Is. A. Black Sheep. Atypical. Unique. One of One. Unlike your online date, this Black Sheep looks better in person! Come check her out [pun intended].</p>
-            <div class="img img-2 mb-4" style="background-image: url(images/about.jpg);">
+            <div class="img img-2 mb-4" id="content-desktop" style="background-image: url(images/about.jpg);">
+            </div>
+            <div  id="content-mobile" >
+             <center> <img src="images/about.jpg" height="400px" width="350px"> </center>
             </div>
         <div class="ftco-section ftco-book col-md-8" style="top: 40%; left: 6%;" id="content-desktop">
           <center>
@@ -278,7 +281,7 @@
                       <div class="select-wrap">
                         <div class="icon"><span class="fa fa-chevron-down"></span></div>
                         <select name="adults" id="adults" class="form-control">
-                          <option value="">Adults</option>
+                          <option value="">Guests</option>
                           <option value="1">1</option>
                           <option value="2">2</option>
                           <option value="5"><5</option>
@@ -286,7 +289,7 @@
                           <option value="20"><20</option>
                           <option value="30"><30</option>
                           <option value="40"><40</option>
-                          <option value="50"><50</option>
+                          <option value="50"><=50</option>
                         </select>
                       </div>
                     </div>
@@ -294,20 +297,11 @@
                 </div>
                 <div class="col-md-6">
                   <div class="form-group">
-                    <div class="form-field">
+                    <div class="input-wrap">
                       <div class="select-wrap">
                         <div class="icon"><span class="fa fa-chevron-down"></span></div>
-                        <select name="children" id="children" class="form-control">
-                          <option value="">Children</option>
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="5"><5</option>
-                          <option value="10"><10</option>
-                          <option value="20"><20</option>
-                          <option value="30"><30</option>
-                          <option value="40"><40</option>
-                          <option value="50"><50</option>
-                        </select>
+                        <div class="icon"><span class="ion-ios-clock"></span></div>
+                        <input type="text" class="form-control appointment_time" placeholder="Check-in Time" id="time" name="time">
                       </div>
                     </div>
                   </div>
@@ -321,7 +315,7 @@
                   <div class="form-group">
                     <div class="input-wrap">
                       <div class="icon"><span class="ion-ios-clock"></span></div>
-                      <input type="text" class="form-control appointment_time" placeholder="Time" id="time" name="time">
+                      <input type="text" class="form-control" placeholder="Promo Code" id="promo code" name="promo code">
                     </div>
                   </div>
                 </div>
@@ -332,8 +326,7 @@
                 </div>
               </div>
             </form>
-</div>
-          
+            </div>
           </center>
         
           </div>

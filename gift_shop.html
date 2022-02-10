@@ -27,7 +27,14 @@
 
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 <style type="text/css">
-  
+  #content-desktop {display: block;}
+#content-mobile {display: none;}
+
+@media screen and (max-width: 768px) {
+#content-desktop {display: none;}
+#content-mobile {display: block;}
+
+}
 </style>
    
   </head>
@@ -105,17 +112,14 @@
     </nav>
     <!-- END nav -->
 
-    <section class="hero-wrap hero-wrap-2">
+    <section class="hero-wrap" id="content-mobile">
+      <img src="images/shopping.jpg" height="200px" width="100%">
+      
+    </section>
+    <section class="hero-wrap hero-wrap-2" id="content-desktop">
       <img src="images/shopping.jpg" height="400px" width="100%">
       <div class="overlay"></div>
-      <div class="container">
-        <div class="row no-gutters slider-text align-items-center justify-content-center">
-          <div class="col-md-9 ftco-animate text-center">
-            <p class="breadcrumbs mb-2"><span class="mr-2"><a href="index.html">Home <i class="fa fa-chevron-right"></i></a></span> <span>Gift Shop <i class="fa fa-chevron-right"></i></span></p>
-            <h1 class="mb-0 bread">Gift Shop</h1>
-          </div>
-        </div>
-      </div>
+   
     </section>
   
     <section>
