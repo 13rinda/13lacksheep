@@ -1,7 +1,7 @@
 <?php
 error_reporting(0);
 
-require "../plugins/phpmailer/PHPMailerAutoload.php";
+require "../plugins/phpmailer/PHPMailerAutoload.html";
 
 if (!empty($_POST['name']) && !empty($_POST['mailto']) && !empty($_POST['subject']) && !empty($_POST['message'])) {
    try{

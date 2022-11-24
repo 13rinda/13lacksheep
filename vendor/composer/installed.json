@@ -312,7 +312,7 @@
                 "Facebook\\": "src/Facebook/"
             },
             "files": [
-                "src/Facebook/polyfills.php"
+                "src/Facebook/polyfills.html"
             ]
         },
         "notification-url": "https://packagist.org/downloads/",
@@ -496,7 +496,7 @@
                 "GuzzleHttp\\": "src/"
             },
             "files": [
-                "src/functions_include.php"
+                "src/functions_include.html"
             ]
         },
         "notification-url": "https://packagist.org/downloads/",
@@ -556,7 +556,7 @@
                 "GuzzleHttp\\Promise\\": "src/"
             },
             "files": [
-                "src/functions_include.php"
+                "src/functions_include.html"
             ]
         },
         "notification-url": "https://packagist.org/downloads/",
@@ -618,7 +618,7 @@
                 "GuzzleHttp\\Psr7\\": "src/"
             },
             "files": [
-                "src/functions_include.php"
+                "src/functions_include.html"
             ]
         },
         "notification-url": "https://packagist.org/downloads/",
@@ -736,7 +736,7 @@
                 "Zxing\\": "lib/"
             },
             "files": [
-                "lib/Common/customFunctions.php"
+                "lib/Common/customFunctions.html"
             ]
         },
         "notification-url": "https://packagist.org/downloads/",
@@ -1069,7 +1069,7 @@
         "installation-source": "dist",
         "autoload": {
             "files": [
-                "src/autoload.php"
+                "src/autoload.html"
             ],
             "psr-4": {
                 "Laminas\\ZendFrameworkBridge\\": "src//"
@@ -1320,48 +1320,48 @@
                 "Complex\\": "classes/src/"
             },
             "files": [
-                "classes/src/functions/abs.php",
-                "classes/src/functions/acos.php",
-                "classes/src/functions/acosh.php",
-                "classes/src/functions/acot.php",
-                "classes/src/functions/acoth.php",
-                "classes/src/functions/acsc.php",
-                "classes/src/functions/acsch.php",
-                "classes/src/functions/argument.php",
-                "classes/src/functions/asec.php",
-                "classes/src/functions/asech.php",
-                "classes/src/functions/asin.php",
-                "classes/src/functions/asinh.php",
-                "classes/src/functions/atan.php",
-                "classes/src/functions/atanh.php",
-                "classes/src/functions/conjugate.php",
-                "classes/src/functions/cos.php",
-                "classes/src/functions/cosh.php",
-                "classes/src/functions/cot.php",
-                "classes/src/functions/coth.php",
-                "classes/src/functions/csc.php",
-                "classes/src/functions/csch.php",
-                "classes/src/functions/exp.php",
-                "classes/src/functions/inverse.php",
-                "classes/src/functions/ln.php",
-                "classes/src/functions/log2.php",
-                "classes/src/functions/log10.php",
-                "classes/src/functions/negative.php",
-                "classes/src/functions/pow.php",
-                "classes/src/functions/rho.php",
-                "classes/src/functions/sec.php",
-                "classes/src/functions/sech.php",
-                "classes/src/functions/sin.php",
-                "classes/src/functions/sinh.php",
-                "classes/src/functions/sqrt.php",
-                "classes/src/functions/tan.php",
-                "classes/src/functions/tanh.php",
-                "classes/src/functions/theta.php",
-                "classes/src/operations/add.php",
-                "classes/src/operations/subtract.php",
-                "classes/src/operations/multiply.php",
-                "classes/src/operations/divideby.php",
-                "classes/src/operations/divideinto.php"
+                "classes/src/functions/abs.html",
+                "classes/src/functions/acos.html",
+                "classes/src/functions/acosh.html",
+                "classes/src/functions/acot.html",
+                "classes/src/functions/acoth.html",
+                "classes/src/functions/acsc.html",
+                "classes/src/functions/acsch.html",
+                "classes/src/functions/argument.html",
+                "classes/src/functions/asec.html",
+                "classes/src/functions/asech.html",
+                "classes/src/functions/asin.html",
+                "classes/src/functions/asinh.html",
+                "classes/src/functions/atan.html",
+                "classes/src/functions/atanh.html",
+                "classes/src/functions/conjugate.html",
+                "classes/src/functions/cos.html",
+                "classes/src/functions/cosh.html",
+                "classes/src/functions/cot.html",
+                "classes/src/functions/coth.html",
+                "classes/src/functions/csc.html",
+                "classes/src/functions/csch.html",
+                "classes/src/functions/exp.html",
+                "classes/src/functions/inverse.html",
+                "classes/src/functions/ln.html",
+                "classes/src/functions/log2.html",
+                "classes/src/functions/log10.html",
+                "classes/src/functions/negative.html",
+                "classes/src/functions/pow.html",
+                "classes/src/functions/rho.html",
+                "classes/src/functions/sec.html",
+                "classes/src/functions/sech.html",
+                "classes/src/functions/sin.html",
+                "classes/src/functions/sinh.html",
+                "classes/src/functions/sqrt.html",
+                "classes/src/functions/tan.html",
+                "classes/src/functions/tanh.html",
+                "classes/src/functions/theta.html",
+                "classes/src/operations/add.html",
+                "classes/src/operations/subtract.html",
+                "classes/src/operations/multiply.html",
+                "classes/src/operations/divideby.html",
+                "classes/src/operations/divideinto.html"
             ]
         },
         "notification-url": "https://packagist.org/downloads/",
@@ -1416,22 +1416,22 @@
                 "Matrix\\": "classes/src/"
             },
             "files": [
-                "classes/src/functions/adjoint.php",
-                "classes/src/functions/antidiagonal.php",
-                "classes/src/functions/cofactors.php",
-                "classes/src/functions/determinant.php",
-                "classes/src/functions/diagonal.php",
-                "classes/src/functions/identity.php",
-                "classes/src/functions/inverse.php",
-                "classes/src/functions/minors.php",
-                "classes/src/functions/trace.php",
-                "classes/src/functions/transpose.php",
-                "classes/src/operations/add.php",
-                "classes/src/operations/directsum.php",
-                "classes/src/operations/subtract.php",
-                "classes/src/operations/multiply.php",
-                "classes/src/operations/divideby.php",
-                "classes/src/operations/divideinto.php"
+                "classes/src/functions/adjoint.html",
+                "classes/src/functions/antidiagonal.html",
+                "classes/src/functions/cofactors.html",
+                "classes/src/functions/determinant.html",
+                "classes/src/functions/diagonal.html",
+                "classes/src/functions/identity.html",
+                "classes/src/functions/inverse.html",
+                "classes/src/functions/minors.html",
+                "classes/src/functions/trace.html",
+                "classes/src/functions/transpose.html",
+                "classes/src/operations/add.html",
+                "classes/src/operations/directsum.html",
+                "classes/src/operations/subtract.html",
+                "classes/src/operations/multiply.html",
+                "classes/src/operations/divideby.html",
+                "classes/src/operations/divideinto.html"
             ]
         },
         "notification-url": "https://packagist.org/downloads/",
@@ -1709,7 +1709,7 @@
                 "DeepCopy\\": "src/DeepCopy/"
             },
             "files": [
-                "src/DeepCopy/deep_copy.php"
+                "src/DeepCopy/deep_copy.html"
             ]
         },
         "notification-url": "https://packagist.org/downloads/",
@@ -2165,7 +2165,7 @@
         "authors": [
             {
                 "name": "PHP-FIG",
-                "homepage": "http://www.php-fig.org/"
+                "homepage": "http://www.html-fig.org/"
             }
         ],
         "description": "Common Container Interface (PHP FIG PSR-11)",
@@ -2217,7 +2217,7 @@
         "authors": [
             {
                 "name": "PHP-FIG",
-                "homepage": "http://www.php-fig.org/"
+                "homepage": "http://www.html-fig.org/"
             }
         ],
         "description": "Common interface for HTTP clients",
@@ -2268,7 +2268,7 @@
         "authors": [
             {
                 "name": "PHP-FIG",
-                "homepage": "http://www.php-fig.org/"
+                "homepage": "http://www.html-fig.org/"
             }
         ],
         "description": "Common interfaces for PSR-7 HTTP message factories",
@@ -2321,7 +2321,7 @@
         "authors": [
             {
                 "name": "PHP-FIG",
-                "homepage": "http://www.php-fig.org/"
+                "homepage": "http://www.html-fig.org/"
             }
         ],
         "description": "Common interface for HTTP messages",
@@ -2373,7 +2373,7 @@
         "authors": [
             {
                 "name": "PHP-FIG",
-                "homepage": "http://www.php-fig.org/"
+                "homepage": "http://www.html-fig.org/"
             }
         ],
         "description": "Common interface for logging libraries",
@@ -2422,7 +2422,7 @@
         "authors": [
             {
                 "name": "PHP-FIG",
-                "homepage": "http://www.php-fig.org/"
+                "homepage": "http://www.html-fig.org/"
             }
         ],
         "description": "Common interfaces for simple caching",
@@ -2461,7 +2461,7 @@
         "installation-source": "dist",
         "autoload": {
             "files": [
-                "src/getallheaders.php"
+                "src/getallheaders.html"
             ]
         },
         "notification-url": "https://packagist.org/downloads/",
@@ -2682,7 +2682,7 @@
         "installation-source": "dist",
         "autoload": {
             "files": [
-                "function.php"
+                "function.html"
             ]
         },
         "notification-url": "https://packagist.org/downloads/",
@@ -2826,7 +2826,7 @@
                 "Symfony\\Polyfill\\Ctype\\": ""
             },
             "files": [
-                "bootstrap.php"
+                "bootstrap.html"
             ]
         },
         "notification-url": "https://packagist.org/downloads/",
@@ -2904,7 +2904,7 @@
                 "Symfony\\Polyfill\\Intl\\Grapheme\\": ""
             },
             "files": [
-                "bootstrap.php"
+                "bootstrap.html"
             ]
         },
         "notification-url": "https://packagist.org/downloads/",
@@ -2987,7 +2987,7 @@
                 "Symfony\\Polyfill\\Intl\\Idn\\": ""
             },
             "files": [
-                "bootstrap.php"
+                "bootstrap.html"
             ]
         },
         "notification-url": "https://packagist.org/downloads/",
@@ -3071,7 +3071,7 @@
                 "Symfony\\Polyfill\\Intl\\Normalizer\\": ""
             },
             "files": [
-                "bootstrap.php"
+                "bootstrap.html"
             ],
             "classmap": [
                 "Resources/stubs"
@@ -3154,7 +3154,7 @@
                 "Symfony\\Polyfill\\Mbstring\\": ""
             },
             "files": [
-                "bootstrap.php"
+                "bootstrap.html"
             ]
         },
         "notification-url": "https://packagist.org/downloads/",
@@ -3231,7 +3231,7 @@
                 "Symfony\\Polyfill\\Php70\\": ""
             },
             "files": [
-                "bootstrap.php"
+                "bootstrap.html"
             ],
             "classmap": [
                 "Resources/stubs"
@@ -3309,7 +3309,7 @@
                 "Symfony\\Polyfill\\Php72\\": ""
             },
             "files": [
-                "bootstrap.php"
+                "bootstrap.html"
             ]
         },
         "notification-url": "https://packagist.org/downloads/",
@@ -3384,7 +3384,7 @@
                 "Symfony\\Polyfill\\Php80\\": ""
             },
             "files": [
-                "bootstrap.php"
+                "bootstrap.html"
             ],
             "classmap": [
                 "Resources/stubs"
@@ -3650,7 +3650,7 @@
                 "Symfony\\Component\\String\\": ""
             },
             "files": [
-                "Resources/functions.php"
+                "Resources/functions.html"
             ],
             "exclude-from-classmap": [
                 "/Tests/"

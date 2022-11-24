@@ -611,7 +611,7 @@ class SMTP
         }
 
         // The following borrowed from
-        // http://php.net/manual/en/function.mhash.php#27225
+        // http://php.net/manual/en/function.mhash.html#27225
 
         // RFC 2104 HMAC implementation for php.
         // Creates an md5 HMAC.

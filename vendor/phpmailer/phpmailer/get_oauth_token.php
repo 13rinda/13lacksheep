@@ -19,8 +19,8 @@
 /**
  * Get an OAuth2 token from an OAuth2 provider.
  * * Install this script on your server so that it's accessible
- * as [https/http]://<yourdomain>/<folder>/get_oauth_token.php
- * e.g.: http://localhost/phpmailer/get_oauth_token.php
+ * as [https/http]://<yourdomain>/<folder>/get_oauth_token.html
+ * e.g.: http://localhost/phpmailer/get_oauth_token.html
  * * Ensure dependencies are installed with 'composer install'
  * * Set up an app in your Google/Yahoo/Microsoft account
  * * Set the script address as the app's redirect URL
@@ -56,7 +56,7 @@ if (!isset($_GET['code']) && !isset($_GET['provider'])) {
 exit;
 }
 
-require 'vendor/autoload.php';
+require 'vendor/autoload.html';
 
 session_start();
 
