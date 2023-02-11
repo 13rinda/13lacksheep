@@ -1,4 +1,6 @@
-/*!
+
+ 
+ /*!
  * Bootstrap v4.2.1 (https://getbootstrap.com/)
  * Copyright 2011-2018 The Bootstrap Authors
  * Copyright 2011-2018 Twitter, Inc.
@@ -9489,4 +9491,88 @@
 		top: 19vh;
 		z-index: 99;
 	}
+}
+
+
+.navigation-area-box{
+	margin: 10px;
+  width: 100%;
+  height: 750px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  transition: all 0.35s linear;
+}
+.navigation-area-box:hover{
+	background-color: #dbdbdb;
+}
+.nav-area-img{
+	overflow: hidden;
+}
+.nav-area-img img{
+	max-width: 100%;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	transition: all 0.35s linear;
+	filter: grayscale(1);
+}
+.nav-area-img img:hover{
+	transform: scale(1.1);
+	filter: grayscale(0);
+}
+.nav-area-content{
+	padding: 20px 30px;
+	font-family: inherit;
+}
+.nav-area-content h3 , .nav-area-content h2{
+	font-weight: 500;
+	font-family: inherit !important;
+
+}
+
+.nav-area-content h2{
+	font-size: 48px;
+	margin-bottom: 14px;
+}
+
+
+@media (max-width: 991px) {
+	.nav-area-content h3 {
+		font-size: 24px;
+	}
+	.navigation-area-box {
+		height: 650px;
+	}
+	.nav-area-content h2 {
+		font-size: 36px;
+	}
+}
+
+@media (max-width: 768px) {
+	.nav-area-content h3 {
+		font-size: 24px;
+	}
+	
+	.nav-area-content h2 {
+		font-size: 36px;
+	}
+	.navigation-area-left , .navigation-area-right{
+		margin: 0 15px;
+	}
+	.navigation-area-content .col-12{
+		padding-left: 0;
+	}
+	.navigation-area-box {
+		height: auto;
+	}
+}
+
+@media (max-width: 576px) {
+	.nav-area-content h2 {
+		font-size: 28px;
+	}
+	.nav-area-content h3 {
+		font-size: 20px;
+	}
+	
 }
