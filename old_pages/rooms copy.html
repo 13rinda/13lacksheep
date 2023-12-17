@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        #booking-calendar {
+            width: 300px;
+            max-width: 100%;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        #booking-calendar .calendar-header {
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            font-size: 18px;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+
+        #booking-calendar .calendar-body {
+            padding: 10px;
+        }
+
+        #booking-calendar .month {
+            margin-bottom: 20px;
+        }
+
+        #booking-calendar .month-name {
+            text-align: center;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        #booking-calendar .weekdays {
+            display: flex;
+            justify-content: space-around;
+            background-color: #eee;
+            padding: 8px;
+        }
+
+        #booking-calendar .day {
+            padding: 10px;
+            text-align: center;
+            cursor: pointer;
+            border: 1px solid #ccc;
+            margin: 1px;
+        }
+
+        #booking-calendar .day:hover {
+            background-color: #ddd;
+        }
+    </style>
+    <title>Booking Calendar</title>
+</head>
+<body>
+
+<div id="booking-calendar">
+    <div class="calendar-header">November 2023</div>
+    <div class="calendar-body">
+        <div class="month">
+            <div class="month-name">November</div>
+            <div class="weekdays">
+                <div>Sun</div>
+                <div>Mon</div>
+                <div>Tue</div>
+                <div>Wed</div>
+                <div>Thu</div>
+                <div>Fri</div>
+                <div>Sat</div>
+            </div>
+            <div class="days">
+                <!-- Calendar days will be dynamically generated here -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const daysContainer = document.querySelector("#booking-calendar .days");
+
+        for (let day = 1; day <= 30; day++) {
+            const dayElement = document.createElement("div");
+            dayElement.classList.add("day");
+
+            dayElement.innerHTML = day;
+
+            daysContainer.appendChild(dayElement);
+        }
+    });
+</script>
+
+</body>
+</html>
