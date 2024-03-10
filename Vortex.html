@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>13lackSheep</title>
+    <link rel="shortcut icon" type="image/png" href="favicon_io/apple.png"/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,500,500i,600,600i,700,700i&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="css/animate.css">
+
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
+
+    <link rel='stylesheet' href='css/iziToast.min.css'>
+
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <style type="text/css">
+
+
+        .parallax {
+            background-image: url(images/bg_1.jpg);
+
+            /* Set a specific height */
+            min-height: 100vh;
+
+            /* Create the parallax scrolling effect */
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+
+            /* safari hack */
+
+        }
+
+        #content-desktop {
+            display: block;
+        }
+
+        #content-mobile {
+            display: none;
+        }
+
+        @media screen and (max-width: 768px) {
+            #content-desktop {
+                display: none;
+            }
+
+            #content-mobile {
+                display: block;
+            }
+
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="wrap" style="text-align:center">
+    <div class="container">
+        <div class="row justify-content-between">
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <p class="mb-0 phone"><span class="mailus"></span> <a href="#"></a><span
+                        class="mailus">email us:</span> <a href="#">blacksheepeventhouse@gmail.com</a></p>
+            </div>
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <div class="social-media">
+                    <p class="mb-0 d-flex">
+                        <a href="#" class="d-flex align-items-center
+                  justify-content-center"><span class="fa fa-facebook"><i
+                                class="sr-only">Facebook</i></span></a>
+                        <a href="https://www.instagram.com/13lacksheep/?hl=en"
+                           class="d-flex align-items-center justify-content-center"><span
+                                class="fa fa-instagram"><i class="sr-only">Instagram</i></span></a>
+                    </p>
+                </div>
+                <a href="#googtrans(en|en)" class="lang-en lang-select"
+                   data-lang="en" style="color:white"><img src="images/u.png"
+                                                           height="20px" width="20px"> English </a>&nbsp; &nbsp;
+
+                <a href="#googtrans(en|fr)" class="lang-es lang-select"
+                   data-lang="fr" style="color:white"><img src="images/f.png"
+                                                           height="20px" width="20px"> French</a>
+            </div>
+        </div>
+        <script type="text/javascript">
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement({
+                    pageLanguage: 'en',
+                    layout: google.translate.TranslateElement.FloatPosition.TOP_LEFT
+                }, 'google_translate_element');
+            }
+
+            function triggerphpEvent(element, eventName) {
+                var event;
+                if (document.createEvent) {
+                    event = document.createEvent('phpEvents');
+                    event.initEvent(eventName, true, true);
+                    element.dispatchEvent(event);
+                } else {
+                    event = document.createEventObject();
+                    event.eventType = eventName;
+                    element.fireEvent('on' + event.eventType, event);
+                }
+            }
+
+            jQuery('.lang-select').click(function () {
+                var theLang = jQuery(this).attr('data-lang');
+                jQuery('.goog-te-combo').val(theLang);
+
+                //alert(jQuery(this).attr('href'));
+                window.location = jQuery(this).attr('href');
+                location.reload();
+
+            });
+        </script>
+        <script type="text/javascript"
+                src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    </div>
+</div>
+<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark
+      ftco-navbar-light" id="ftco-navbar">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">13lackSheep <span></span></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false"
+                aria-label="Toggle navigation">
+            <span class="fa fa-bars"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="ftco-nav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+                <li class="nav-item dropdown-main">
+                    <a class="nav-link dropdown-toggle" href="#" id="availabilityDropdown" role="button" data-toggle="dropdown-main" aria-haspopup="true" aria-expanded="false">Availability Calendar</a>
+                    <div class="dropdown-main-menu" aria-labelledby="availabilityDropdown">
+                        <a class="nav-link dropdown-main-item" href="https://calendar.google.com/calendar/embed?src=29d0284563027b024a19abd970804f9036ca36d25182026283125b837348db3a%40group.calendar.google.com&ctz=America%2FToronto" target="_blank" >13lack Luxury</a>
+                        <a class="nav-link dropdown-main-item" href="https://calendar.google.com/calendar/embed?src=603f5bc950fbc565b7353076032c91b670d9a862b903d52d91788919c802c240%40group.calendar.google.com&ctz=America%2FToronto" target="_blank" >Mini-Chalet</a>
+                        <a class="nav-link dropdown-main-item" href="https://calendar.google.com/calendar/ical/2248cc89d471442b80305860f993f63a96bb070e7e8e0f9405723bc56595d455%40group.calendar.google.com/public/basic.ics" target="_blank" >Vortex</a>
+                        <a class="nav-link dropdown-main-item" href="https://calendar.google.com/calendar/embed?src=82957406d1eb7c7070810a3344836099c2ac4ecdfdf90b01554dd45d00d190b5%40group.calendar.google.com&ctz=America%2FToronto" target="_blank" >Waterfront Chalet</a>
+                    </div> 
+                </li>
+                <li class="nav-item"><a href="rooms.html" class="nav-link">Special
+                    Pricing</a></li>
+                <li class="nav-item"><a href="house_rules.html" class="nav-link">House Rules</a></li>
+                <li class="nav-item"><a href="blog.html" class="nav-link">Publications</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+        <style>
+            /* Dedicated Styling for Availability Calendar */
+            .nav-link {
+                text-decoration: none;
+                color: white; /* Set your desired text color */
+                font-weight: bold;
+                padding: 10px;
+                display: inline-block;
+            }
+            
+            .nav-link:hover {
+                background-color: #555; /* Set your desired hover background color */
+                border-radius: 5px;
+            }
+            
+            /* Style the dropdown */
+            .dropdown-main {
+                position: relative;
+                display: inline-block;
+            }
+            
+            .dropdown-main-menu {
+                display: none;
+                position: absolute;
+                background-color: #333; /* Set your desired dropdown background color */
+                box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+                z-index: 1;
+            }
+            
+            .dropdown-main-item {
+                color: white; /* Set your desired dropdown text color */
+                padding: 12px;
+                display: block;
+                text-decoration: none;
+            }
+            
+            .dropdown-main-item:hover {
+                background-color: #555; /* Set your desired dropdown item hover background color */
+            }
+            
+            /* Show the dropdown menu on hover */
+            .dropdown-main:hover .dropdown-main-menu {
+                display: block;
+            }
+        </style>
+    </div>
+</nav>
+
+
+<!-- Second container -->
+
+<div class="hero-wrap js-fullheight header-bgimage-mobile" style="background-image: url('images/bg1.jpg');"
+     data-stellar-background-ratio="0.5">
+    <div class="overlay"></div>
+</div>
+<section class="ftco-section bg-light">
+    <div class="container">
+        <div class="row no-gutters">
+            <div class="col-md-6 wrap-about">
+                <h2>Come check out Vortex!</h2>
+                <p> Just like entering a vortex, this dynamic dwelling immerses you in a realm of new experiences and boundless creativity. Descend into the vibrant depths of the basement, where a kaleidoscope of colors dances around you, igniting the senses and sparking inspiration at every turn. Ascend to the top floor, where the atmosphere shifts dramatically to a pristine, polished white oasis, offering a serene contrast to the vivacity below. </p>
+                <div class="img img-2 mb-4" id="content-desktop" style="background-image: url(images/about.jpg);">
+                </div>
+                <div id="content-mobile">
+                    <center><img src="images/about.JPG" height="400px" width="350px"></center>
+                </div>
+                <div class="ftco-section ftco-book col-md-8" style="top: 40%; left: 6%;" id="content-desktop">
+                    <center>
+                        <form method="POST" id="appointment-form" name="appointment-form" class="appointment-form "
+                              action="https://script.google.com/macros/s/AKfycbxhQoLZxC8rNxN6BXoKqT8bjumniftaQ7JVomMLe89TpIzYR2rpOnwYEXBzqcM4SLMYAw/exec">
+                            <!-- <input type="hidden" class="form-control" id="mailto" value="blacksheepeventhouse@gmail.com"> -->
+                            <input type="hidden" class="form-control" name="emailtype" id="emailtype"
+                                   value="reservation">
+                            <center><a
+                                    href="https://www.airbnb.ca/rooms/49062148?preview_for_ml=true&source_impression_id=p3_1636679453_osGa%2FA7KVRlyVWBa&guests=1&adults=1"
+                                    class="btn btn-primary">Book on AirBnb</a>
+                                <a href="https://13lacksheep.com/rooms.html" class="btn btn-primary">Book with
+                                    Discounts</a></center>
+                            <br><br>
+                            <h3 class="mb-3">Send Reservation Request</h3>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Full Name" id="fullname"
+                                               name="fullname">
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" name="mailfrom" id="mailfrom"
+                                               placeholder="Email">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <div class="input-wrap">
+                                            <div class="icon"><span class="ion-md-calendar"></span></div>
+                                            <input type="text" class="form-control appointment_date-check-in"
+                                                   placeholder="Check-In" id="checkin" name="checkin">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <div class="input-wrap">
+                                            <div class="icon"><span class="ion-md-calendar"></span></div>
+                                            <input type="text" class="form-control appointment_date-check-out"
+                                                   placeholder="Check-Out" id="checkout" name="checkout">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <div class="form-field">
+                                            <div class="select-wrap">
+                                                <div class="icon"><span class="fa fa-chevron-down"></span></div>
+                                                <select name="adults" id="adults" class="form-control">
+                                                    <option value="">Guests</option>
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="5"><5</option>
+                                                    <option value="10"><10</option>
+                                                    <option value="20"><20</option>
+                                                    <option value="30"><30</option>
+                                                    <option value="40"><40</option>
+                                                    <option value="50"><=50</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <div class="input-wrap">
+                                            <div class="select-wrap">
+                                                <div class="icon"><span class="fa fa-chevron-down"></span></div>
+                                                <div class="icon"><span class="ion-ios-clock"></span></div>
+                                                <input type="text" class="form-control appointment_time"
+                                                       placeholder="Check-in Time" id="time" name="time">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Phone number" id="phone"
+                                               name="phone">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <div class="input-wrap">
+                                            <div class="icon"><span class="ion-ios-clock"></span></div>
+                                            <input type="text" class="form-control" placeholder="Promo Code"
+                                                   id="promo code" name="promo code">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="g-recaptcha"
+                                         data-sitekey="6LfciCUjAAAAAOgp6mqTQQLC5zuuVujIp6351gYH"></div>
+                                </div>
+                                <br>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <input type="submit" value="Book Now" class="btn btn-primary py-3 px-4"
+                                               id="booking-now">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                </div>
+                </center>
+                <br>
+                <div id="content-mobile">
+                    <center><a
+                            href="https://www.airbnb.ca/rooms/49062148?preview_for_ml=true&source_impression_id=p3_1636679453_osGa%2FA7KVRlyVWBa&guests=1&adults=1"
+                            class="btn btn-primary">Book on AirBnb</a>
+                        <a href="https://13lacksheep.com/rooms.html" class="btn btn-primary">Book with Discounts</a>
+                    </center>
+                </div>
+                <center>
+                    <div class="ftco-section ftco-book col-md-8" id="content-mobile"
+                         style="bottom: 2%; border-radius: 10%;">
+
+                        <form method="POST" id="appointment-form" name="appointment-form" class="appointment-form "
+                              action="https://script.google.com/macros/s/AKfycbxhQoLZxC8rNxN6BXoKqT8bjumniftaQ7JVomMLe89TpIzYR2rpOnwYEXBzqcM4SLMYAw/exec">
+                            <!-- <input type="hidden" class="form-control" id="mailto" value="blacksheepeventhouse@gmail.com"> -->
+                            <input type="hidden" class="form-control" name="emailtype" id="emailtype"
+                                   value="reservation">
+                            <h4 class="mb-3">Send Reservation Request</h4>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Full Name" id="fullname"
+                                               name="fullname">
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" name="mailfrom" id="mailfrom"
+                                               placeholder="Email">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <div class="input-wrap">
+                                            <div class="icon"><span class="ion-md-calendar"></span></div>
+                                            <input type="text" class="form-control appointment_date-check-in"
+                                                   placeholder="Check-In" id="checkin" name="checkin">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <div class="input-wrap">
+                                            <div class="icon"><span class="ion-md-calendar"></span></div>
+                                            <input type="text" class="form-control appointment_date-check-out"
+                                                   placeholder="Check-Out" id="checkout" name="checkout">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <div class="form-field">
+                                            <div class="select-wrap">
+                                                <div class="icon"><span class="fa fa-chevron-down"></span></div>
+                                                <select name="adults" id="adults" class="form-control">
+                                                    <option value="">Guests</option>
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="5"><5</option>
+                                                    <option value="10"><10</option>
+                                                    <option value="20"><20</option>
+                                                    <option value="30"><30</option>
+                                                    <option value="40"><40</option>
+                                                    <option value="50"><=50</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <div class="input-wrap">
+                                            <div class="select-wrap">
+                                                <div class="icon"><span class="fa fa-chevron-down"></span></div>
+                                                <div class="icon"><span class="ion-ios-clock"></span></div>
+                                                <input type="text" class="form-control appointment_time"
+                                                       placeholder="Check-in Time" id="time" name="time">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Phone number" id="phone"
+                                               name="phone">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <div class="input-wrap">
+                                            <div class="icon"><span class="ion-ios-clock"></span></div>
+                                            <input type="text" class="form-control" placeholder="Promo Code"
+                                                   id="promo code" name="promo code">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <input type="submit" value="Book Now" class="btn btn-primary py-3 px-4"
+                                               id="booking-now">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </center>
+
+            </div>
+
+            <div class="col-md-6 wrap-about ftco-animate">
+                <div class="heading-section">
+                    <div class="pl-md-5">
+                        <h2 class="mb-2">Amenities</h2>
+                    </div>
+                </div>
+                <div class="pl-md-5">
+                    <p></p>
+                    <div class="row">
+                        <div class="services-2 col-lg-6 d-flex w-100">
+                            <div class="icon d-flex justify-content-center align-items-center">
+                                <span class="flaticon-first"></span>
+                            </div>
+                            <div class="media-body pl-3">
+                                <h3 class="heading">Multiple Parking Spots</h3>
+                                <p>Rest assured, parking is abundant with space for at least 8 vehicles on our private driveway. Enjoy the convenience and peace of mind knowing that there's ample room for you and your guests to park comfortably.</p>
+                            </div>
+                        </div>
+                        <div class="services-2 col-lg-6 d-flex w-100">
+                            <div class="icon d-flex justify-content-center align-items-center">
+                                <span class="flaticon-first"></span>
+                            </div>
+                            <div class="media-body pl-3">
+                                <h3 class="heading">Basement</h3>
+                                <p>This roughly 800 square feet basement, has colour changing pot lights that can be controlled from your smart phone using the "Lumary" application. The ceilings are low, approximately 6"5 feet, and has a lot of open space for you to get creative.</p>
+                            </div>
+                        </div>
+                        <div class="services-2 col-lg-6 d-flex w-100">
+                            <div class="icon d-flex justify-content-center align-items-center">
+                                <span class="flaticon-first"></span>
+                            </div>
+                            <div class="media-body pl-3">
+                                <h3 class="heading">Large backyard and Deck</h3>
+                                <p>This property sits on a nearly 10 000 square feet lot. This gives you ample amount of backyard space, a large deck with a BBQ, and we can even rent you tables, chairs, decor, and so forth to make your outdoor set up come to life.</p>
+                            </div>
+                        </div>
+                        <div class="services-2 col-lg-6 d-flex w-100">
+                            <div class="icon d-flex justify-content-center align-items-center">
+                                <span class="flaticon-first"></span>
+                            </div>
+                            <div class="media-body pl-3">
+                                <h3 class="heading">Kitchen</h3>
+                                <p>Our kitchen maintains its standard of excellence with a complete array of furnishings and an open-concept layout. Enjoy the convenience and functionality of a fully equipped culinary space, seamlessly integrated into the surrounding living areas for a harmonious flow of activity and conversation.</p>
+                            </div>
+                        </div>
+                        <div class="services-2 col-lg-6 d-flex w-100">
+                            <div class="icon d-flex justify-content-center align-items-center">
+                                <span class="flaticon-first"></span>
+                            </div>
+                            <div class="media-body pl-3">
+                                <h3 class="heading">Wifi</h3>
+                                <p>Okay do you really think we would forget about the wifi? ... How else would you tag
+                                    our instagram @13lacksheep with your event pictures? Tag us and maybe we will gift
+                                    you with a future discount... key word MAYBE. Depends how well you clean up after
+                                    yourselves. Hmmph. </p>
+                            </div>
+                        </div>
+                        <div class="services-2 col-lg-6 d-flex w-100">
+                            <div class="icon d-flex justify-content-center align-items-center">
+                                <span class="flaticon-first"></span>
+                            </div>
+                            <div class="media-body pl-3">
+                                <h3 class="heading">Heat and Air conditioning</h3>
+                                <p>Experience year-round comfort with our enchanting provision of heating and air conditioning.</p>
+                            </div>
+                        </div>
+                        <div class="services-2 col-lg-6 d-flex w-100">
+                            <div class="icon d-flex justify-content-center align-items-center">
+                                <span class="flaticon-first"></span>
+                            </div>
+                            <div class="media-body pl-3">
+                                <h3 class="heading">Fireman's Pole</h3>
+                                <p>If you think this pole has anything to do with a fireman... honey, you're too young
+                                    for this event house. This aint no Ronald Mcdonald playhouse. Please don't 'Bruk'
+                                    your headtop trying to 'bruk it down'!</p>
+                            </div>
+                        </div>
+                        <div class="services-2 col-lg-6 d-flex w-100">
+                            <div class="icon d-flex justify-content-center align-items-center">
+                                <span class="flaticon-first"></span>
+                            </div>
+                            <div class="media-body pl-3">
+                                <h3 class="heading">Sleeping Accommodations</h3>
+                                <p>This house sleeps 22 guests! There are two bedrooms, with 3 queen beds, and 8 queen foldable custom sofa-booth-bed mattresses, that totals 11 queen mattresses!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="ftco-section bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 d-flex services align-self-stretch px-4 ftco-animate">
+                <div class="d-block services-wrap text-center">
+                    <div class="img" style="background-image: url(images/bedd.png);"></div>
+                    <div class="media-body py-4 px-3">
+                        <h3 class="heading">Sleeps 22 Guests</h3>
+                        <p>Our custom-made sofa-booth beds feature full-size mattresses, comfortably accommodating two adults each. With a total of eight units located in the living room, transforming them into beds is a breeze. Simply unfold them for a restful night's sleep. Bedding is conveniently stored within the large black cushions, accessible by unzipping them. In this house, there are no conventional beds besides these versatile foldable mattresses. For added comfort, stack them to create a loftier sleeping arrangement. For a visual guide on how our sleeping arrangements function, check out our Instagram story highlight titled "Sleeps 16".</p>
+                        <p><a href="https://www.instagram.com/13lacksheep/" class="btn btn-primary">View more on Instagram</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 d-flex services align-self-stretch px-4 ftco-animate">
+                <div class="d-block services-wrap text-center">
+                    <div class="img" style="background-image: url(images/white.jpg);"></div>
+                    <div class="media-body py-4 px-3">
+                        <h3 class="heading">Basement</h3>
+                        <p>Though the bed is notably absent, this bedroom contains an array of captivating furnishings and even a striking pole. This space defies the conventions of a typical bedroom, offering a multifunctional oasis where creativity knows no bounds. Control the ambiance effortlessly with smart lights responding to your voice commands of "lights on" and "lights off," or personalize your experience further with the "magic lantern" app, available for download at your fingertips. Enclosed by a chic barn door, you  may move the foldable mattresses here if you would like the typical private bedroom feel. </p>
+                        <p><a href="https://www.instagram.com/13lacksheep/" class="btn btn-primary">View more on Instagram</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 d-flex services align-self-stretch px-4 ftco-animate">
+                <div class="d-block services-wrap text-center">
+                    <div class="img" style="background-image: url(images/living.JPG);"></div>
+                    <div class="media-body py-4 px-3">
+                        <h3 class="heading">Ourdoor Space</h3>
+                        <p>Welcome to your dream kitchen! This fully furnished culinary haven boasts a sprawling 16-foot-long counter, providing ample space for your culinary creations and entertaining endeavors. With an open concept design, this kitchen seamlessly integrates with the living area, ensuring you're always at the heart of the action. Whether you're whipping up a gourmet meal or simply enjoying a cozy night in, this kitchen is sure to be the focal point. Additionally, there are 2 large 6 feet round tables with wheels that you may easily move around for your optimal set up! </p>
+                        <p><a href="https://www.instagram.com/13lacksheep/" class="btn btn-primary">View more on Instagram</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--div>
+    <center>
+        <video controls width="400">
+
+
+            <source src="images/jimmy.mp4"
+                    type="video/mp4">
+
+            Sorry, your browser doesn't support embedded videos.
+        </video>
+    </center>
+</div-->
+
+<section class="ftco-section testimony-section bg-light">
+    <div class="container">
+        <div class="row justify-content-center pb-5 mb-3">
+            <div class="col-md-7 heading-section text-center ftco-animate">
+                <h2>Your Feedback is Important...</h2>
+            </div>
+        </div>
+        <div class="row ftco-animate">
+            <div class="col-md-12">
+                <div class="carousel-testimony owl-carousel">
+                    <div class="item">
+                        <div class="testimony-wrap d-flex">
+                            <div class="user-img" style="background-image: url(images/logo_1.png)">
+                            </div>
+                            <div class="text pl-4">
+                    <span class="quote d-flex align-items-center justify-content-center">
+                      <i class="fa fa-quote-left"></i>
+                    </span>
+                                <p>THE BEST HOST EVER! I had my 18th birthday party at her chalet, it was an insanely good price and it was absolutely gorgeous. The host has a whole guide that tells you where everything is and how everything kind of works and that was super helpful. She’s also a very cool and understanding person as long as you’re communicative and honest. Overall one of the best experiences I’ve ever had with a host and would definitely recommend to everyone to book with her! Be careful to follow the rules though, be a decent human being and you’ll be treated with the same respect :)</p>
+                                <p class="name">Gisoo Rasoulipour</p>
+                                <span class="position">Google Review</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="testimony-wrap d-flex">
+                            <div class="user-img" style="background-image: url(images/logo_1.png)">
+                            </div>
+                            <div class="text pl-4">
+                    <span class="quote d-flex align-items-center justify-content-center">
+                      <i class="fa fa-quote-left"></i>
+                    </span>
+                                <p>Booked one of Brinda’s places for my 21st birthday this past weekend and it was a great experience/ great price too. She was super accommodating and responsive. Definitely recommend!</p>
+                                <p class="name">Blake Saraga</p>
+                                <span class="position">Google Review</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="testimony-wrap d-flex">
+                            <div class="user-img" style="background-image: url(images/logo_1.png)">
+                            </div>
+                            <div class="text pl-4">
+                    <span class="quote d-flex align-items-center justify-content-center">
+                      <i class="fa fa-quote-left"></i>
+                    </span>
+                                <p>It’s s great place for an event, very spacious. The host was really nice to help me out to find a place, last minute and responded very quickly. I really recommend this place.</p>
+                                <p class="name">Prena Viji</p>
+                                <span class="position">Google Review</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="testimony-wrap d-flex">
+                            <div class="user-img" style="background-image: url(images/logo_1.png)">
+                            </div>
+                            <div class="text pl-4">
+                    <span class="quote d-flex align-items-center justify-content-center">
+                      <i class="fa fa-quote-left"></i>
+                    </span>
+                                <p>I celebrated my birthday and the place was very nice, i enjoyed and had fun and the host is very nice and understanding and really makes sure you enjoy your stay, will 100% reserve when i have a chance to celebrate any events so far the best of all😊</p>
+                                <p class="name">Its Official Jessie</p>
+                                <span class="position">Google Review</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="testimony-wrap d-flex">
+                            <div class="user-img" style="background-image: url(images/logo_1.png)">
+                            </div>
+                            <div class="text pl-4">
+                    <span class="quote d-flex align-items-center justify-content-center">
+                      <i class="fa fa-quote-left"></i>
+                    </span>
+                                <p>The host was amazing and friendly,very quick to get in contact with for any questions.</p>
+                                <p class="name">Stephanie Liyanage</p>
+                                <span class="position">Google Review</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="ftco-intro" style="background-image: url(images/bg_1.jpg);" data-stellar-background-ratio="0.5">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-9 text-center">
+                <h2>Ready to get started</h2>
+                <p class="mb-4">It’s safe to book online with us! Get your dream stay in clicks or drop us a line with
+                    your questions.</p>
+                <p class="mb-0"><a href="#appointment-form" class="btn btn-primary px-4 py-3">Book now</a> <a
+                        href="contact.html#contact-wrapper" class="btn btn-white px-4 py-3">Contact us</a></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-lg-3 mb-md-0 mb-4">
+                <h2 class="footer-heading"><a href="#" class="logo">Venue like no other...</a></h2>
+                <p>How many venues are there where you can sleep over? We got you covered!</p>
+                <a href="https://www.instagram.com/13lacksheep/">Follow Us<span class="fa fa-chevron-right"
+                                                                                style="font-size: 11px;"></span></a>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-md-0 mb-4">
+                <h2 class="footer-heading">Services</h2>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="py-1 d-block">We are accommodating</a></li>
+                    <li><a href="#" class="py-1 d-block">to special requests</a></li>
+                    <li><a href="#" class="py-1 d-block">which you may need for</a></li>
+                    <li><a href="#" class="py-1 d-block">your events! </a></li>
+                </ul>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-md-0 mb-4">
+                <h2 class="footer-heading">Tags</h2>
+                <div class="tagcloud">
+                    <a href="#" class="tag-cloud-link">Short Term Rental</a>
+                    <a href="#" class="tag-cloud-link">Vacation Home</a>
+                    <a href="#" class="tag-cloud-link">Venue</a>
+                    <a href="#" class="tag-cloud-link">Event House</a>
+                    <a href="#" class="tag-cloud-link">Custom Event Needs</a>
+                    <a href="#" class="tag-cloud-link">Event Planner</a>
+                    <a href="#" class="tag-cloud-link">Party Service</a>
+                    <a href="#" class="tag-cloud-link">Near Montreal, Laval...</a>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-md-0 mb-4">
+                <h2 class="footer-heading">Do you need a custom cake, or need a custom catering menu? We have the
+                    contacts! Ask us!</h2>
+                <form action="https://13lacksheep.com/contact.html#contact-wrapper">
+                    <div class="form-group d-flex">
+                        <button type="submit" class="form-control submit rounded-right"><span
+                                class="sr-only">Submit</span><i class="fa fa-paper-plane"></i></button>
+                    </div>
+                </form>
+
+                </ul>
+            </div>
+        </div>
+        <div id="google_translate_element"></div>
+    </div>
+    <div class="w-100 mt-5 border-top py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-lg-8">
+
+                    <p class="copyright mb-0">
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        Copyright &copy;<script>document.write(new Date().getFullYear());</script>
+                        All rights reserved | Website developed by Brinda Mailvaganam
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                </div>
+                <div class="col-md-6 col-lg-4 text-md-right">
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div id="ftco-loader" class="show fullscreen">
+    <svg class="circular" width="48px" height="48px">
+        <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/>
+        <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+                stroke="#F96D00"/>
+    </svg>
+</div>
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery-migrate-3.0.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/jquery.waypoints.min.js"></script>
+<script src="js/jquery.stellar.min.js"></script>
+<script src="js/jquery.animateNumber.min.js"></script>
+<script src="js/bootstrap-datepicker.js"></script>
+<script src="js/jquery.timepicker.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/scrollax.min.js"></script>
+<script src='js/iziToast.min.js'></script>
+<script src="js/main.js"></script>
+<script src="js/my_scripts.js"></script>
+
+</body>
+</html>
