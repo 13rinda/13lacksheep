@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>13lackSheep</title>
+    <link rel="shortcut icon" type="image/png" href="favicon_io/apple.png"/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,500,500i,600,600i,700,700i&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="css/animate.css">
+
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
+
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <style type="text/css">
+        #content-desktop {
+            display: block;
+        }
+
+        #content-mobile {
+            display: none;
+        }
+
+        @media screen and (max-width: 768px) {
+            #content-desktop {
+                display: none;
+            }
+
+            #content-mobile {
+                display: block;
+            }
+
+        }
+    </style>
+
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark
+        ftco-navbar-light" id="ftco-navbar">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">13lackSheep <span></span></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false"
+                aria-label="Toggle navigation">
+            <span class="fa fa-bars"></span> Menu
+        </button>
+        <div class="collapse navbar-collapse" id="ftco-nav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+                <li class="nav-item"><a href="rooms.html" class="nav-link">Special
+                    Pricing</a></li>
+                <li class="nav-item active"><a href="gift_shop.html" class="nav-link">House Rules</a></li>
+                <li class="nav-item"><a href="blog.html" class="nav-link">Publications</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<section class="hero-wrap hero-wrap-2" id="content-desktop">
+    <img src="images/compare.jpg" height="400px" width="100%">
+    <div class="overlay" style="max-height: 400px;"></div>
+
+</section>
+
+<section>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+  <style>
+    .house-rules {
+      text-align: center;
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .house-rules h2 {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .house-rules ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .house-rules li {
+      margin-bottom: 10px;
+    }
+
+    .house-rules li strong {
+      font-weight: bold;
+      font-size: 16px;
+      color: red;
+    }
+  </style>
+
+    </head>
+  </section>
+
+<!--------------------- NEW PART ----------------------->
+
+<section class="chatBot">
+  <body>
+
+
+<body>
+    <div class="container">
+  <div class="chat-container">
+    <div class="chat" id="chat"></div>
+    <div id="responseButtons"></div>
+    <div id="suggestion"></div>
+  </div>
+</div>
+
+<script>
+  const topics = ["Estimated Guest Count", "City Preference"];
+  const responses = {
+    "Estimated Guest Count": ["10 and under", "25 and under", "35 and under"],
+    "City Preference": ["Mirabel", "Saint-Marthe", "Mercier", "Terrebonne"]
+  };
+
+  const suggestions = {
+    "10 and under": "Mini Chalet",
+    "25 and under": "13lack Luxury",
+    "35 and under": "Waterfront Chalet",
+    "Mirabel": "13lack Luxury",
+    "Saint-Marthe": "Mini Chalet",
+    "Mercier": "Waterfront Chalet",
+    "Terrebonne": "Vortex"
+  };
+
+  const suggestionDescriptions = {
+    "13lack Luxury": "Luxurious modern villa with sleek design and top-notch amenities, providing an exclusive experience for discerning guests.",
+    "Mini Chalet": "A small cozy retro themed chalet that is perfect for a small intimate gathering with family and friends.",
+    "Waterfront Chalet": "Charming chalet situated by the waterfront, offering stunning views and a serene atmosphere for relaxation.",
+    "Vortex": "Experience a whirlwind of colors and luxury in this modern and vibrant home, providing a unique and unforgettable stay."
+  };
+
+  let currentTopicIndex = 0;
+
+  const chat = document.getElementById("chat");
+  const responseButtons = document.getElementById("responseButtons");
+  const suggestionDiv = document.getElementById("suggestion");
+
+  function displayTopic() {
+    const topic = topics[currentTopicIndex];
+    const botDiv = document.createElement("div");
+    botDiv.innerHTML = `<div class="bot">Select your preferred ${topic}:</div>`;
+    chat.appendChild(botDiv);
+    
+    const topicResponses = responses[topic];
+    topicResponses.forEach(response => {
+      const button = document.createElement("button");
+      button.innerText = response;
+      button.onclick = () => sendResponse(response);
+      responseButtons.appendChild(button);
+    });
+  }
+
+  function sendResponse(response) {
+    const userDiv = document.createElement("div");
+    userDiv.innerHTML = `<div class="user">${response}</div>`;
+    chat.appendChild(userDiv);
+
+    // Display suggestion based on user response
+    let suggestion = suggestions[response];
+    if (currentTopicIndex === 0 && response === "10 and under") {
+      suggestion = "Mini Chalet";
+    }
+    if (suggestion) {
+      suggestionDiv.innerHTML = `
+        <div class="suggestion">
+          <h3>${suggestion}</h3>
+          <p>${suggestionDescriptions[suggestion]}</p>
+        </div>
+      `;
+      // Add different colors based on suggestion
+      suggestionDiv.style.backgroundColor = getBackgroundColor(suggestion);
+    }
+
+    currentTopicIndex++;
+
+    if (currentTopicIndex < topics.length) {
+      displayTopic();
+    } else {
+      displayBestChoice();
+    }
+  }
+
+  function getBackgroundColor(suggestion) {
+    switch (suggestion) {
+      case "Mini Chalet":
+        return "#FFD700"; // Gold color for Mini Chalet
+      case "13lack Luxury":
+        return "#4169E1"; // Royal blue color for 13lack Luxury
+      case "Waterfront Chalet":
+        return "#32CD32"; // Lime green color for Waterfront Chalet
+      case "Vortex":
+        return "#FF1493"; // Deep pink color for Vortex
+      default:
+        return "#FFFFFF"; // Default white color
+    }
+  }
+
+  function displayBestChoice() {
+    // Replace this with your logic to determine the best choice based on user responses
+    const bestChoice = "Best choice based on your preferences: Property X";
+    
+    const botDiv = document.createElement("div");
+    botDiv.innerHTML = `<div class="bot">${bestChoice}</div>`;
+    chat.appendChild(botDiv);
+  }
+
+  displayTopic();
+</script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vacation Rental Assistant</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .chat-container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .chat {
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            overflow-y: auto;
+            max-height: 300px;
+        }
+        .bot {
+            margin-bottom: 5px;
+            color: #555;
+        }
+        .user {
+            margin-bottom: 5px;
+            color: #333;
+        }
+        #responseButtons {
+            display: flex;
+            gap: 10px;
+        }
+        button {
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        #suggestion {
+            padding: 10px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+        .suggestion {
+            margin-top: 10px;
+        }
+        h3 {
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="chat-container">
+            <div class="chat" id="chat"></div>
+            <div id="responseButtons"></div>
+            <div id="suggestion"></div>
+        </div>
+    </div>
+
+    <script>
+        const topics = ["Estimated Guest Count", "City Preference", "Budget"];
+        const responses = {
+            "Estimated Guest Count": ["10 and under", "25 and under", "35 and under"],
+            "City Preference": ["Mirabel", "Saint-Marthe", "Mercier", "Terrebonne"],
+            "Budget": ["Low Budget", "Medium Budget", "High Budget"]
+        };
+
+        const suggestions = {
+            "10 and under": "Mini Chalet",
+            "25 and under": "13lack Luxury",
+            "35 and under": "Waterfront Chalet",
+            "Mirabel": "13lack Luxury",
+            "Saint-Marthe": "Mini Chalet",
+            "Mercier": "Waterfront Chalet",
+            "Terrebonne": "Vortex",
+            "Low Budget": "Mini Chalet",
+            "Medium Budget": "Vortex",
+            "High Budget": "13lack Luxury"
+        };
+
+        const suggestionDescriptions = {
+            "13lack Luxury": "13lack Luxury price on weekdays is $470 and $850-910 on weekends (Fridays and Saturdays). *Prices may vary based on the nature of the event, age group, and number of guests.",
+            "Mini Chalet": "Mini chalet price ranges between $300-400 on weekdays and $500-600 on weekends (Friday or Saturday). *Prices may vary based on the nature of the event, age group, and number of guests.",
+            "Waterfront Chalet": "Waterfront Chalet description goes here. *Prices may vary based on the nature of the event, age group, and number of guests.",
+            "Vortex": "Experience a whirlwind of colors and luxury in this modern and vibrant home, providing a unique and unforgettable stay."
+        };
+
+        let currentTopicIndex = 0;
+
+        const chat = document.getElementById("chat");
+        const responseButtons = document.getElementById("responseButtons");
+        const suggestionDiv = document.getElementById("suggestion");
+
+        function displayTopic() {
+            const topic = topics[currentTopicIndex];
+            const botDiv = document.createElement("div");
+            botDiv.innerHTML = `<div class="bot">Select your preferred ${topic}:</div>`;
+            chat.appendChild(botDiv);
+
+            const topicResponses = responses[topic];
+            topicResponses.forEach(response => {
+                const button = document.createElement("button");
+                button.innerText = response;
+                button
+
+
+
+
+
+</section>
+
+
+
+
+  </body>
+
+</section>
+
+<!---END OF NEW PART ----------------------------------->
+
+
+    </br>
+    </br>
+
+<!--------------------------------------------------------------------------------------------------->
+<!--------------------------------------------------------------------------------------------------->
+<!--------------------------------------------------------------------------------------------------->
+<!--------------------------------------------------------------------------------------------------->
+<!--------------------------------------------------------------------------------------------------->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-lg-3 mb-md-0 mb-4">
+                <h2 class="footer-heading"><a href="#" class="logo">Venue like no other...</a></h2>
+                <p>How many venues are there where you can sleep over? We got you covered!</p>
+                <a href="https://www.instagram.com/13lacksheep/">Follow Us<span class="fa fa-chevron-right"
+                                                                                style="font-size: 11px;"></span></a>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-md-0 mb-4">
+                <h2 class="footer-heading">Services</h2>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="py-1 d-block">We are accommodating</a></li>
+                    <li><a href="#" class="py-1 d-block">to special requests</a></li>
+                    <li><a href="#" class="py-1 d-block">which you may need for</a></li>
+                    <li><a href="#" class="py-1 d-block">your events! </a></li>
+                </ul>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-md-0 mb-4">
+                <h2 class="footer-heading">Tags</h2>
+                <div class="tagcloud">
+                    <a href="#" class="tag-cloud-link">Short Term Rental</a>
+                    <a href="#" class="tag-cloud-link">Vacation Home</a>
+                    <a href="#" class="tag-cloud-link">Venue</a>
+                    <a href="#" class="tag-cloud-link">Event House</a>
+                    <a href="#" class="tag-cloud-link">Custom Event Needs</a>
+                    <a href="#" class="tag-cloud-link">Event Planner</a>
+                    <a href="#" class="tag-cloud-link">Party Service</a>
+                    <a href="#" class="tag-cloud-link">Near Montreal, Laval...</a>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-md-0 mb-4">
+                <h2 class="footer-heading">Do you need a custom cake, or need a custom catering menu? We have the
+                    contacts! Ask us!</h2>
+                <form action="https://13lacksheep.com/contact.html">
+                    <div class="form-group d-flex">
+                        <button type="submit" class="form-control submit rounded-right"><span
+                                class="sr-only">Submit</span><i class="fa fa-paper-plane"></i></button>
+                    </div>
+                </form>
+
+                </ul>
+            </div>
+            <div id="google_translate_element"></div>
+        </div>
+    </div>
+    <div class="w-100 mt-5 border-top py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-lg-8">
+
+                    <p class="copyright mb-0">
+                        Copyright &copy;<script>document.write(new Date().getFullYear());</script>
+                        All rights reserved | Website developed by Brinda Mailvaganam
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                </div>
+                <div class="col-md-6 col-lg-4 text-md-right">
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<!-- loader -->
+<div id="ftco-loader" class="show fullscreen">
+    <svg class="circular" width="48px" height="48px">
+        <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/>
+        <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+                stroke="#F96D00"/>
+    </svg>
+</div>
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery-migrate-3.0.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/jquery.waypoints.min.js"></script>
+<script src="js/jquery.stellar.min.js"></script>
+<script src="js/jquery.animateNumber.min.js"></script>
+<script src="js/bootstrap-datepicker.js"></script>
+<script src="js/jquery.timepicker.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/scrollax.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+<script src="js/google-map.js"></script>
+<script src="js/main.js"></script>
+
+
+</body>
+</html>
